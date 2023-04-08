@@ -102,18 +102,31 @@ setInterval(() =>
 // confirm який перевірятиме чи користувач досі знаходиться на сторінці.
 // 
 
-const message = 'Are you still here';
-const timeoutInMilliseconds = 10000;
-const timeoutHandler = () => {
-    if (confirm(message)) { //confirm вбудований метод в браузері щоб щось перевірити
-        window.clearTimeout(timeoutHandler);
-        window.setTimeout(timeoutHandler, timeoutInMilliseconds);
-    } else {
-        window.clearTimeout(timeoutHandler);
-        window.close();
-    }
-}
-window.setTimeout(timeoutHandler, timeoutInMilliseconds);
-document.addEventListener('click', () => {
-    window.clearTimeout(timeoutHandler);
-});
+// const message = 'Are you still here';
+// const timeoutInMilliseconds = 10000;
+// const timeoutHandler = () => {
+//     if (confirm(message)) { //confirm вбудований метод в браузері щоб щось перевірити
+//         window.clearTimeout(timeoutHandler);
+//         window.setTimeout(timeoutHandler, timeoutInMilliseconds);
+//     } else {
+//         window.clearTimeout(timeoutHandler);
+//         window.close();
+//     }
+// }
+// window.setTimeout(timeoutHandler, timeoutInMilliseconds);
+// document.addEventListener('click', () => {
+//     window.clearTimeout(timeoutHandler);
+// });
+////////////////////////////////////////////////////////
+
+//create ptomise
+// const promise1 = new Promise((resovle, reject) => {
+// resovle(10);
+// });
+// const promise2 = new Promise((resovle, reject) => {
+//     reject(10);
+//   /////////////////////////////////////
+// const res = (arr) {
+
+// }
+// res([1, 2, 3, 4]);
