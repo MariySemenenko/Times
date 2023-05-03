@@ -130,3 +130,137 @@ setInterval(() =>
 
 // }
 // res([1, 2, 3, 4]);
+///////////////////////////////////////////////
+
+//Vova Melnyk
+
+// const result = new Promise((resolve, reject) => {
+//   let total = 0;
+
+//   for (let i = 0; i < 1000000000; i++) {
+//     total += i;
+//   }
+
+//   if (total % 3 === 0) {
+//     resolve(total);
+//   } else {
+//     reject('error');
+//   }
+// });
+// result
+// .then((data) => console.log(data))
+// .catch((error) => console.log(error))
+// .finally(() => console.log('finally'));
+///////////////////////////////////////////////////////////////////////
+
+// function promiseCreatot(counter) {
+// return new Promise((resolve, reject) => {
+
+//   let total = 0;
+  
+//     for (let i = 0; i < counter; i++) {
+//       total += i;
+//     }
+  
+//     if (total % 2 === 0) {
+//       resolve(total);
+//     } else {
+//       reject('error');
+//     }
+// })
+    
+//   };
+
+// promiseCreatot(10)
+// .then((data) => console.log(data))
+// .catch((error) => console.log(error));
+
+// promiseCreatot(1001)
+// .then((data) => console.log(data))
+// .catch((error) => console.log(error));
+////////////////////////////////////////////////////
+
+// function promiseCreatot(counter) {
+//   return new Promise((resolve, reject) => {
+  
+//     let total = 0;
+    
+//       for (let i = 0; i < counter; i++) {
+//         total += i;
+//       }
+    
+//       if (total % 2 === 0) {
+//         resolve(total);
+//       } else {
+//         reject('error');
+//       }
+//   })
+      
+//     };
+
+
+//     Promise.all([promiseCreatot(8), promiseCreatot(1001)])
+//     .then((data) => {
+//       console.log('data', data);
+//     })
+//     .catch((error) => {
+//       console.log('error', error);
+//     });
+/////////////////////////////////////////////////
+
+// function promiseCreatot(counter) {
+//   return new Promise((resolve, reject) => {
+  
+//     let total = 0;
+    
+//       for (let i = 0; i < counter; i++) {
+//         total += i;
+//       }
+    
+//       if (total % 2 === 0) {
+//         resolve(total);
+//       } else {
+//         reject('error');
+//       }
+//   })
+      
+//     };
+
+
+//     Promise.race([promiseCreatot(8), promiseCreatot(1001)])
+//     .then((data) => {
+//       console.log('data', data);
+//     })
+//     .catch((error) => {
+//       console.log('error', error);
+//     });
+/////////////////////////////////////////////////////
+
+
+// function promiseCreatot(counter) {
+//   return new Promise((resolve, reject) => {
+  
+//     let total = 0;
+    
+//       for (let i = 0; i < counter; i++) {
+//         total += i;
+//       }
+    
+//       if (total % 2 === 0) {
+//         resolve(total);
+//       } else {
+//         reject('error');
+//       }
+//   })
+      
+//     };
+
+
+//     Promise.allSettled([promiseCreatot(8), promiseCreatot(999)])
+//     .then((data) => {
+//       console.log('data', data);
+//     })
+//     .catch((error) => {
+//       console.log('error', error);
+//     });
+//////////////////////////////////////////////////
